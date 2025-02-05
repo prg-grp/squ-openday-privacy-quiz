@@ -1,9 +1,10 @@
 'use client';
 
+import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { AnimatePresence, motion } from 'framer-motion';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const questions = [
   {
@@ -93,8 +94,30 @@ export default function PrivacyQuiz() {
     setIsCorrect(null);
   };
 
+  useEffect(() => {
+    function handleKeyDown(event: KeyboardEvent) {
+      switch (event.key) {
+        case 'r':
+          restartQuiz();
+          break;
+        case '1':
+        case '2':
+        case '3':
+        case '4':
+          if (!showScore && selectedAnswer === null) {
+            handleAnswerClick(parseInt(event.key) - 1);
+          }
+          break;
+      }
+    }
+
+    document.addEventListener('keydown', handleKeyDown);
+
+    return () => document.removeEventListener('keydown', handleKeyDown);
+  });
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#006756] to-[#004c40] p-4">
+    <div className="min-h-screen flex items-center justify-center p-4">
       <Card className="w-full max-w-2xl">
         <CardHeader>
           <CardTitle className="text-2xl font-bold text-center">Who Wants to Be a Privacy Expert?</CardTitle>
@@ -133,8 +156,11 @@ export default function PrivacyQuiz() {
                       onClick={() => handleAnswerClick(index)}
                       disabled={selectedAnswer !== null}
                       variant={selectedAnswer === index ? (isCorrect ? 'default' : 'destructive') : 'outline'}
-                      className="text-left justify-start h-auto py-3 px-4"
+                      className="text-left justify-start h-auto py-3 px-4 border-hsgDarkGreen"
                     >
+                      <Badge variant="secondary" className="bg-hsgDarkGreen text-white">
+                        {index + 1}
+                      </Badge>
                       {answer}
                     </Button>
                   ))}
@@ -147,7 +173,12 @@ export default function PrivacyQuiz() {
           <p className="text-sm text-muted-foreground">
             Score: {score}/{questions.length}
           </p>
-          {showScore && <Button onClick={restartQuiz}>Restart Quiz</Button>}
+          <Button onClick={restartQuiz} variant="secondary">
+            <Badge variant="secondary" className="bg-hsgDarkGreen text-white">
+              r
+            </Badge>
+            Quiz neustarten
+          </Button>
         </CardFooter>
       </Card>
     </div>
