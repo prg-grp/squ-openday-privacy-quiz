@@ -27,7 +27,12 @@ Raspberry Quiz is an interactive quiz application built with Next.js. The quiz f
 
 ## Usage with Raspberry Pi
 
-TODO
+To use this quiz interactively with a Raspberry Pi:
+
+1. Connect physical buttons to the Raspberry Pi GPIO pins.
+2. Run the provided Python script on the Raspberry Pi. This script will send keyboard inputs (1-4) for the respective GPIO ports.
+3. Open the quiz in a web browser on the Raspberry Pi.
+4. Use the physical buttons to interact with the quiz.
 
 ## License
 
