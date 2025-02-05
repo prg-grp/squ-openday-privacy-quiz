@@ -66,6 +66,13 @@ export default function PrivacyQuiz() {
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [isCorrect, setIsCorrect] = useState<boolean | null>(null);
 
+  const keyboardKeyIndex = {
+    a: 0,
+    b: 1,
+    c: 2,
+    d: 3,
+  };
+
   const handleAnswerClick = (answerIndex: number) => {
     setSelectedAnswer(answerIndex);
     setIsCorrect(answerIndex === questions[currentQuestion].correct);
@@ -100,20 +107,20 @@ export default function PrivacyQuiz() {
         case 'r':
           restartQuiz();
           break;
-        case '1':
-        case '2':
-        case '3':
-        case '4':
+        case 'a':
+        case 'b':
+        case 'c':
+        case 'd':
           if (!showScore && selectedAnswer === null) {
-            handleAnswerClick(parseInt(event.key) - 1);
+            handleAnswerClick(keyboardKeyIndex[event.key]);
           }
           break;
       }
     }
 
-    document.addEventListener('keydown', handleKeyDown);
+    window.addEventListener('keydown', handleKeyDown);
 
-    return () => document.removeEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
   });
 
   return (
@@ -159,7 +166,7 @@ export default function PrivacyQuiz() {
                       className="text-left justify-start h-auto py-3 px-4 border-hsgDarkGreen"
                     >
                       <Badge variant="secondary" className="bg-hsgDarkGreen text-white">
-                        {index + 1}
+                        {Object.entries(keyboardKeyIndex).find(([_, value]) => value === index)?.[0]}
                       </Badge>
                       {answer}
                     </Button>
