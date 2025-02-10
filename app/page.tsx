@@ -113,6 +113,8 @@ export default function PrivacyQuiz() {
         case 'd':
           if (!showScore && selectedAnswer === null) {
             handleAnswerClick(keyboardKeyIndex[event.key]);
+          } else if (showScore) {
+            restartQuiz();
           }
           break;
       }
