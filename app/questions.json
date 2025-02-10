@@ -1,0 +1,52 @@
+[
+  {
+    "question": "What is the primary purpose of the GDPR?",
+    "answers": [
+      "To regulate internet speeds",
+      "To protect personal data and privacy in the EU",
+      "To promote cybersecurity",
+      "To standardize web design"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "What does 'data minimization' mean?",
+    "answers": [
+      "Collecting as much data as possible",
+      "Deleting all user data",
+      "Collecting only necessary data",
+      "Sharing data with third parties"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "What is a 'data breach'?",
+    "answers": [
+      "A new data collection method",
+      "A type of computer virus",
+      "Unauthorized access to personal data",
+      "A data storage technique"
+    ],
+    "correct": 2
+  },
+  {
+    "question": "What is 'consent' in terms of data privacy?",
+    "answers": [
+      "Automatic agreement to all terms",
+      "Explicit permission to process personal data",
+      "A type of data encryption",
+      "A legal document"
+    ],
+    "correct": 1
+  },
+  {
+    "question": "What is the 'right to be forgotten'?",
+    "answers": [
+      "The right to delete your social media accounts",
+      "The right to have personal data erased",
+      "The right to use a pseudonym online",
+      "The right to block unwanted emails"
+    ],
+    "correct": 1
+  }
+]
