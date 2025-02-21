@@ -1,52 +1,150 @@
-[
-  {
-    "question": "What is the primary purpose of the GDPR?",
-    "answers": [
-      "To regulate internet speeds",
-      "To protect personal data and privacy in the EU",
-      "To promote cybersecurity",
-      "To standardize web design"
-    ],
-    "correct": 1
-  },
-  {
-    "question": "What does 'data minimization' mean?",
-    "answers": [
-      "Collecting as much data as possible",
-      "Deleting all user data",
-      "Collecting only necessary data",
-      "Sharing data with third parties"
-    ],
-    "correct": 2
-  },
-  {
-    "question": "What is a 'data breach'?",
-    "answers": [
-      "A new data collection method",
-      "A type of computer virus",
-      "Unauthorized access to personal data",
-      "A data storage technique"
-    ],
-    "correct": 2
-  },
-  {
-    "question": "What is 'consent' in terms of data privacy?",
-    "answers": [
-      "Automatic agreement to all terms",
-      "Explicit permission to process personal data",
-      "A type of data encryption",
-      "A legal document"
-    ],
-    "correct": 1
-  },
-  {
-    "question": "What is the 'right to be forgotten'?",
-    "answers": [
-      "The right to delete your social media accounts",
-      "The right to have personal data erased",
-      "The right to use a pseudonym online",
-      "The right to block unwanted emails"
-    ],
-    "correct": 1
-  }
-]
+{
+  "en": [
+    {
+      "question": "What is data privacy?",
+      "answers": ["The protection of personal information from unauthorized use", "Sharing all personal details publicly"]
+    },
+    {
+      "question": "What is data security?",
+      "answers": [
+        "The practice of protecting data from unauthorized access",
+        "A method to organize and store files",
+        "A buzzword that business people tell you to get your money"
+      ]
+    },
+    {
+      "question": "What is a strong password?",
+      "answers": ["A password that is hard to guess", "A password that is easy to remember, like birthdates"]
+    },
+    {
+      "question": "What does two-factor authentication (2FA) provide?",
+      "answers": [
+        "An extra layer of security by requiring two types of verification",
+        "A way to reset your password automatically"
+      ]
+    },
+    {
+      "question": "What is the biggest security risk when using public Wi-Fi?",
+      "answers": [
+        "Public Wi-Fi is often unencrypted, so hackers can easily intercept your data",
+        "Using public Wi-Fi is safe as long as you do not enter personal and private data",
+        "Public Wi-Fi is only dangerous if you visit suspicious websites",
+        "The main concern is the reliability of the connection"
+      ]
+    },
+    {
+      "question": "What is phishing?",
+      "answers": [
+        "A cyber attack that tricks you into giving personal information",
+        "A method to securely share files online",
+        "A technique to boost your computer's performance",
+        "A type of computer hardware malfunction"
+      ]
+    },
+    {
+      "question": "What is encryption?",
+      "answers": [
+        "A method to scramble data so that only authorized parties can read it",
+        "A way to delete data permanently",
+        "A technique to improve internet speed"
+      ]
+    },
+    {
+      "question": "What is the primary purpose of a firewall?",
+      "answers": ["To block unauthorized network access to your computer", "To physically protect your computer hardware"]
+    },
+    {
+      "question": "What is a digital certificate?",
+      "answers": [
+        "An electronic document that verifies the identity of a website or individual",
+        "A physical certificate awarded after completing a computer course",
+        "A program that increases your internet speed"
+      ]
+    },
+    {
+      "question": "Which regulation is designed to protect consumer data privacy in the European Union?",
+      "answers": [
+        "General Data Protection Regulation (GDPR)",
+        "Data Encryption Standard (DES)",
+        "Advanced Encryption Standard (AES)"
+      ]
+    }
+  ],
+  "de": [
+    {
+      "question": "Was ist Datenschutz?",
+      "answers": [
+        "Der Schutz persönlicher Informationen vor unbefugter Nutzung",
+        "Die öffentliche Weitergabe aller persönlichen Details"
+      ]
+    },
+    {
+      "question": "Was ist Datensicherheit?",
+      "answers": [
+        "Die Praxis, Daten vor unbefugtem Zugriff zu schützen",
+        "Eine Methode, um Dateien zu organisieren und zu speichern",
+        "Ein Schlagwort, das Geschäftsleute verwenden, um Ihr Geld zu bekommen"
+      ]
+    },
+    {
+      "question": "Was ist ein starkes Passwort?",
+      "answers": ["Ein Passwort, das schwer zu erraten ist", "Ein Passwort, das leicht zu merken ist, wie Geburtsdaten"]
+    },
+    {
+      "question": "Was bietet die Zwei-Faktor-Authentifizierung (2FA)?",
+      "answers": [
+        "Eine zusätzliche Sicherheitsebene, die zwei Arten der Verifizierung erfordert",
+        "Eine Möglichkeit, Ihr Passwort automatisch zurückzusetzen"
+      ]
+    },
+    {
+      "question": "Was ist das größte Sicherheitsrisiko bei der Nutzung von öffentlichem WLAN?",
+      "answers": [
+        "Öffentliches WLAN ist oft unverschlüsselt, sodass Hacker Ihre Daten leicht abfangen können",
+        "Die Nutzung von öffentlichem WLAN ist sicher, solange Sie keine persönlichen und privaten Daten eingeben",
+        "Öffentliches WLAN ist nur gefährlich, wenn Sie verdächtige Websites besuchen",
+        "Das Hauptproblem ist die Zuverlässigkeit der Verbindung"
+      ]
+    },
+    {
+      "question": "Was ist Phishing?",
+      "answers": [
+        "Ein Cyberangriff, der Sie dazu bringt, persönliche Informationen preiszugeben",
+        "Eine Methode, um Dateien online sicher zu teilen",
+        "Eine Technik, um die Leistung Ihres Computers zu steigern",
+        "Eine Art von Hardwarefehler im Computer"
+      ]
+    },
+    {
+      "question": "Was ist Verschlüsselung?",
+      "answers": [
+        "Eine Methode, um Daten zu verschlüsseln, sodass nur autorisierte Parteien sie lesen können",
+        "Eine Möglichkeit, Daten dauerhaft zu löschen",
+        "Eine Technik, um die Internetgeschwindigkeit zu verbessern"
+      ]
+    },
+    {
+      "question": "Was ist der Hauptzweck einer Firewall?",
+      "answers": [
+        "Den unbefugten Netzwerkzugriff auf Ihren Computer zu blockieren",
+        "Ihre Computerhardware physisch zu schützen"
+      ]
+    },
+    {
+      "question": "Was ist ein digitales Zertifikat?",
+      "answers": [
+        "Ein elektronisches Dokument, das die Identität einer Website oder Person verifiziert",
+        "Ein physisches Zertifikat, das nach Abschluss eines Computerkurses verliehen wird",
+        "Ein Programm, das Ihre Internetgeschwindigkeit erhöht"
+      ]
+    },
+    {
+      "question": "Welche Verordnung dient dem Schutz der Datenprivatsphäre von Verbrauchern in der Europäischen Union?",
+      "answers": [
+        "Datenschutz-Grundverordnung (DSGVO)",
+        "Data Encryption Standard (DES)",
+        "Advanced Encryption Standard (AES)"
+      ]
+    }
+  ]
+}

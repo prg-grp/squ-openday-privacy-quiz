@@ -1,0 +1,22 @@
+{
+  "en": {
+    "title": "Who Wants to Be a Privacy Expert?",
+    "description": "Test your knowledge of data privacy and security with these questions.",
+    "completed": "Quiz completed!",
+    "score": "Your score:",
+    "outof": " out of ",
+    "question": "Question ",
+    "currentScore": "Score: ",
+    "restart": "Restart quiz"
+  },
+  "de": {
+    "title": "Was weisst du über Datenschutz?",
+    "description": "Teste dein Wissen über Datenschutz und Sicherheit.",
+    "completed": "Quiz abgeschlossen!",
+    "score": "Dein Ergebnis:",
+    "outof": " von ",
+    "question": "Frage ",
+    "currentScore": "Ergebnis: ",
+    "restart": "Quiz neu starten"
+  }
+}
