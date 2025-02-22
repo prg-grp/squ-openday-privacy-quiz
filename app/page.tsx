@@ -129,6 +129,7 @@ export default function PrivacyQuiz() {
                 exit={{ opacity: 0 }}
                 className="text-center"
               >
+                <h2 className="text-2xl font-bold mb-4">Cyber Security Quiz</h2>
                 <h2 className="text-2xl font-bold mb-4">Sprache wählen / select language</h2>
                 <div className="flex justify-center">
                   <Button
